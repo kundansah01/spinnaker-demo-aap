@@ -1,0 +1,8 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  kundan-docker:
+    image: kundan:v1
+    build: .
+    container_name: kundan-docker
+    ports:
+      - "1244:80"
